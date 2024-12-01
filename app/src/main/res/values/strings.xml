@@ -1,0 +1,10 @@
+<resources>
+    <!-- Definición de otras cadenas de texto -->
+    <string name="app_name">Mi App de Finanzas</string> <!-- Esta línea debería estar aquí también -->
+
+    <!-- Definición del arreglo de frecuencia -->
+    <string-array name="frecuencia_array">
+        <item>Mensual</item>
+        <item>Único</item>
+    </string-array>
+</resources>

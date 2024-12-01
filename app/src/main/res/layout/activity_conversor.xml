@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Moneda"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Spinner para moneda de origen -->
+    <Spinner
+        android:id="@+id/spinner_from_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Campo para ingresar la cantidad -->
+    <EditText
+        android:id="@+id/editText_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad a convertir"
+        android:inputType="numberDecimal" />
+
+    <!-- Spinner para moneda de destino -->
+    <Spinner
+        android:id="@+id/spinner_to_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Botón para realizar la conversión -->
+    <Button
+        android:id="@+id/button_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir" />
+
+    <!-- Texto para mostrar el resultado -->
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:gravity="center" />
+
+</LinearLayout>

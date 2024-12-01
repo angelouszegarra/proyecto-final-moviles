@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema Claro con ActionBar -->
+    <style name="Theme.AppFinanzas" parent="Theme.MaterialComponents.DayNight">
+        <!-- Colores personalizados para el tema claro -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+    </style>
+
+    <!-- Tema Oscuro con ActionBar -->
+    <style name="Theme.AppFinanzas.Dark" parent="Theme.MaterialComponents.DayNight">
+        <!-- Colores personalizados para el tema oscuro -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondaryDark</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryDark</item>
+
+    </style>
+</resources>
