@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Actividad de Presupuestos -->
+        <!-- Actividades secundarias -->
         <activity
             android:name=".PresupuestosActivity"
             android:exported="true" />
@@ -37,10 +37,13 @@
             android:exported="true" />
         <activity
             android:name=".CalculadoraActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".TemaActivity"
-            android:exported="true"/>
+            android:exported="true" />
+        <activity
+            android:name=".TransferenciaActivity"
+            android:exported="true" />
 
     </application>
 </manifest>

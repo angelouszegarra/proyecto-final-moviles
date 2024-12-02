@@ -9,33 +9,40 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)  // Cargamos la nueva vista de inicio
+        setContentView(R.layout.activity_main) // Cargamos la vista de inicio
 
         // Referencias a los CardView
         val cardPresupuestos = findViewById<CardView>(R.id.cardPresupuestos)
         val cardConversor = findViewById<CardView>(R.id.cardConversor)
         val cardCalculadora = findViewById<CardView>(R.id.cardCalculadora)
         val cardTemas = findViewById<CardView>(R.id.cardTemas)
+        val cardTransferencia = findViewById<CardView>(R.id.cardTransferencia)
 
-        // Acciones al hacer clic en los CardView
+        // Configuración de listeners
         cardPresupuestos.setOnClickListener {
-            val intent = Intent(this, PresupuestosActivity::class.java)
-            startActivity(intent)
+            navigateToActivity(PresupuestosActivity::class.java)
         }
 
         cardConversor.setOnClickListener {
-            val intent = Intent(this, ConversorActivity::class.java)
-            startActivity(intent)
+            navigateToActivity(ConversorActivity::class.java)
         }
 
         cardCalculadora.setOnClickListener {
-            val intent = Intent(this, CalculadoraActivity::class.java)
-            startActivity(intent)
+            navigateToActivity(CalculadoraActivity::class.java)
         }
 
         cardTemas.setOnClickListener {
-            val intent = Intent(this, TemaActivity::class.java)
-            startActivity(intent)
+            navigateToActivity(TemaActivity::class.java)
         }
+
+        cardTransferencia.setOnClickListener {
+            navigateToActivity(TransferenciaActivity::class.java)
+        }
+    }
+
+    // Función para manejar la navegación a otras actividades
+    private fun navigateToActivity(activityClass: Class<*>) {
+        val intent = Intent(this, activityClass)
+        startActivity(intent)
     }
 }

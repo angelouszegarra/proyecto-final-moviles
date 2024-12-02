@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/colorBackground"
     android:gravity="center">
-
 
     <!-- CardView para Presupuestos -->
     <androidx.cardview.widget.CardView
@@ -26,14 +26,12 @@
             android:gravity="center"
             android:padding="16dp">
 
-            <!-- Icono (aquí puedes agregar un ícono de presupuesto) -->
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_presupuesto"
                 android:layout_marginEnd="16dp" />
 
-            <!-- Texto -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,14 +59,12 @@
             android:gravity="center"
             android:padding="16dp">
 
-            <!-- Icono (aquí puedes agregar un ícono de conversor) -->
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_conversor"
                 android:layout_marginEnd="16dp" />
 
-            <!-- Texto -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,14 +92,12 @@
             android:gravity="center"
             android:padding="16dp">
 
-            <!-- Icono (aquí puedes agregar un ícono de calculadora) -->
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_calculadora"
                 android:layout_marginEnd="16dp" />
 
-            <!-- Texto -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -117,6 +111,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:elevation="6dp"
         android:radius="8dp"
         android:clickable="true"
@@ -130,14 +125,12 @@
             android:gravity="center"
             android:padding="16dp">
 
-            <!-- Icono (aquí puedes agregar un ícono de temas) -->
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_temas"
                 android:layout_marginEnd="16dp" />
 
-            <!-- Texto -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -146,6 +139,48 @@
                 android:textColor="@android:color/black" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <!-- CardView para Enviar Dinero -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:radius="8dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/cardTransferencia">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_transferencia"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar Dinero"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- TextView para mostrar el IGV -->
+    <TextView
+        android:id="@+id/igvTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
 
 
 </LinearLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/textPais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="País: USA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monto: $5000"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textIgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IGV: $250"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total a Enviar: $"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textDestinatario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destinatario: Juan Pérez"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textDni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DNI: 12345678"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textNumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Número: +123456789"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha: 01/12/2024"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+

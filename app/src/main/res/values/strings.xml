@@ -1,10 +1,22 @@
 <resources>
     <!-- Definición de otras cadenas de texto -->
-    <string name="app_name">Mi App de Finanzas</string> <!-- Esta línea debería estar aquí también -->
+    <string name="app_name">Mi App de Finanzas</string>
+    <string name="transferencia_de_dinero">Transferencia de Dinero</string>
+    <string name="resultado">Resultado</string>
+    <string name="calcular">Calcular</string>
+    <string name="bonos">Bonos</string>
+    <string name="cantidad_a_enviar">Cantidad a enviar</string> <!-- Esta línea debería estar aquí también -->
 
     <!-- Definición del arreglo de frecuencia -->
     <string-array name="frecuencia_array">
         <item>Mensual</item>
         <item>Único</item>
     </string-array>
+    <string-array name="countries_array">
+        <item>USA</item>
+        <item>México</item>
+        <item>Canadá</item>
+        <item>Otro</item>
+    </string-array>
+
 </resources>

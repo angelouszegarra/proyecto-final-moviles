@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner para seleccionar país -->
+
+    <!-- IGV: Muestra el IGV del país seleccionado -->
+
+    <Spinner
+        android:id="@+id/spinnerPais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/igvTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="IGV: "
+        android:textSize="16sp" />
+
+    <!-- Campo para ingresar la cantidad -->
+    <EditText
+        android:id="@+id/inputCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese cantidad a transferir"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo para ingresar el nombre del destinatario -->
+    <EditText
+        android:id="@+id/inputNombreDestinatario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del destinatario"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <!-- Campo para ingresar el número del destinatario -->
+    <EditText
+        android:id="@+id/inputNumeroDestinatario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número del destinatario"
+        android:inputType="phone" />
+
+    <!-- Campo para ingresar el DNI del destinatario -->
+    <EditText
+        android:id="@+id/inputDniDestinatario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DNI del destinatario"
+        android:inputType="number" />
+
+    <!-- Botón para calcular -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calcular" />
+
+    <!-- Recibo con el resultado de la transferencia -->
+    <TextView
+        android:id="@+id/resultadoTransferencia"
+        android:layout_width="371dp"
+        android:layout_height="146dp"
+        android:gravity="start"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <!-- Botón para Confirmar Transacción (inicialmente oculto) -->
+    <Button
+        android:id="@+id/btnConfirmarTransaccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Confirmar Transacción"
+        android:visibility="gone" />
+
+    <!-- Historial de Transacciones (inicialmente vacío) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTransacciones1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+        <!-- Botón para Ver Transacciones -->
+        <Button
+            android:id="@+id/btnVerTransacciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Transacciones"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" /> <!-- Inicialmente oculto -->
+
+        <!-- RecyclerView para mostrar el historial de transacciones -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTransacciones2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:ignore="DuplicateIds" />  <!-- Inicialmente oculto -->
+
+</LinearLayout>
